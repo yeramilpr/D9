@@ -8,7 +8,7 @@
     <body class="grid grid-cols-4 gap-4">    
             
         <input id="display" class="bg-yellow-100 col-span-3">
-        <button class="h-40 bg-green-500" onclick="document.getElementById('display').value=''">clear</button>
+        <button class="h-40 bg-green-500" onclick="clr()">clear</button>
         <button class="h-40 bg-green-500" onclick="document.getElementById('display').value+='1'">ONE</button>
         <button class="h-40 bg-green-500" onclick="document.getElementById('display').value+='2'">TWO</button>
         <button class="h-40 bg-green-500" onclick="document.getElementById('display').value+='3'">THREE</button>
@@ -23,8 +23,26 @@
         <button class="h-40 bg-green-500" onclick="document.getElementById('display').value+='-'">-</button>
         <button class="h-40 bg-green-500" onclick="document.getElementById('display').value+='0'">ZERO</button>
         <button class="h-40 bg-green-500" onclick="document.getElementById('display').value+='.'">.</button>
-        <button class="h-40 bg-green-500" onclick="document.getElementById('display').value = eval('12-2')">=</button>
+        <button class="h-40 bg-green-500" onclick="solve()">=</button>
         <button class="h-40 bg-green-500" onclick="document.getElementById('display').value+='+'">+</button>           
+
+        <script> 
+
+        function clr(){ 
+            document.getElementById('display').value='';
+        }
+        
+        function solve() {
+            //get content of display box
+            let x = document.getElementById('display').value;
+
+            //eval ans solve
+            let answer = eval(x);
+
+            //printout the answer in display box
+            document.getElementById('display').value = answer;
+        }
+        </script>
 
     </body>
 
