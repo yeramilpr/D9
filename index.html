@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css" rel="stylesheet" type="text/css" />
+        
+    </head>
+    <body class="grid grid-cols-4 gap-4">    
+            
+        <input id="display" class="bg-yellow-100 col-span-3">
+        <button class="bg-green-500" onclick="document.getElementById('display').value=''">clear</button>
+        <button class="bg-green-500" onclick="document.getElementById('display').value+='1'">ONE</button>
+        <button class="bg-green-500" onclick="document.getElementById('display').value+='2'">TWO</button>
+        <button class="bg-green-500" onclick="document.getElementById('display').value+='3'">THREE</button>
+        <button class="bg-green-500" onclick="document.getElementById('display').value+='/'">/</button>
+        <button class="bg-green-500" onclick="document.getElementById('display').value+='4'">FOUR</button>
+        <button class="bg-green-500" onclick="document.getElementById('display').value+='5'">FIVE</button>
+        <button class="bg-green-500" onclick="document.getElementById('display').value+='6'">SIX</button>
+        <button class="bg-green-500" onclick="document.getElementById('display').value+='*'">*</button>
+        <button class="bg-green-500" onclick="document.getElementById('display').value+='7'">SEVEN</button>
+        <button class="bg-green-500" onclick="document.getElementById('display').value+='8'">EIGHT</button>
+        <button class="bg-green-500" onclick="document.getElementById('display').value+='9'">NINE</button>
+        <button class="bg-green-500" onclick="document.getElementById('display').value+='-'">-</button>
+        <button class="bg-green-500" onclick="document.getElementById('display').value+='0'">ZERO</button>
+        <button class="bg-green-500" onclick="document.getElementById('display').value+='.'">.</button>
+        <button class="bg-green-500" onclick="document.getElementById('display').value = eval('12-2')">=</button>
+        <button class="bg-green-500" onclick="document.getElementById('display').value+='+'">+</button>           
+
+    </body>
+
+</html>
